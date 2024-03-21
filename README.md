@@ -5,7 +5,8 @@ Rezolvare:
 
 #include <iostream>
 using namespace std;
-int main() {
+int main() 
+{
     float nr1, nr2;
     cout << "introdu primul număr: ";
     cin >> nr1;
