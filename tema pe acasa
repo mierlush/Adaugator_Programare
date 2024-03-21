@@ -52,6 +52,8 @@ int main() {
 
     return 0;
 }
+
+
 Zaruri
 •	Implementează un joc de zaruri în care utilizatorul încearcă să ghicească suma a două zaruri aruncate. Dacă suma este 7 sau 11, utilizatorul câștigă; dacă este 2, 3 sau 12, utilizatorul pierde; în orice alt caz, jocul continuă.
 
