@@ -5,7 +5,6 @@ Rezolvare:
 
 #include <iostream>
 using namespace std;
-
 int main() {
     float nr1, nr2;
     cout << "introdu primul număr: ";
@@ -17,6 +16,7 @@ int main() {
     return 0;
 }
 
+![image](https://github.com/mierlush/Adaugator_Programare/assets/163460760/26d70b1b-fd1a-4f24-adb1-7c38c1c1d813)
 
 Joc de Ghicire:
 •	Creează un program care generează un număr aleatoriu între 1 și 100. Utilizatorul încearcă să ghicească numărul și primește indicii dacă răspunsul său este prea mare sau prea mic.
@@ -32,13 +32,10 @@ int main() {
     srand(time(nullptr));
     int numar_aleatoriu = rand() % 100 + 1;
     int ghicire;
-
     cout << "Incearca sa ghicesti numarul intre 1 si 100." << endl;
-
     while (true) {
         cout << "Introdu un numar: ";
         cin >> ghicire;
-
         if (ghicire == numar_aleatoriu) {
             cout << "Felicitari! Ai ghicit numarul." << endl;
             break;
@@ -48,7 +45,6 @@ int main() {
             cout << "Prea mare! Incearca din nou." << endl;
         }
     }
-
     return 0;
 }
 Zaruri
@@ -63,26 +59,21 @@ using namespace std;
 
 int main() {
     srand(time(nullptr));
-
     cout << "Bine ai venit la jocul de zaruri!" << endl;
-
     while (true) {
         cout << "Apasa o tasta pentru a arunca zarurile...";
         getchar();
         int suma = rand() % 6 + 1 + rand() % 6 + 1;
         cout << "Suma este " << suma << endl;
-
         if (suma == 7 || suma == 11)
             cout << "Felicitari! Ai castigat!" << endl;
         else if (suma == 2 || suma == 3 || suma == 12)
             cout << "Ai pierdut! Mai incearca o data." << endl;
         else
             cout << "Nu ai castigat sau pierdut. Mai incearca o data." << endl;
-
         if (suma == 7 || suma == 11 || suma == 2 || suma == 3 || suma == 12)
             break;
     }
-
     return 0;
 }
 
@@ -99,16 +90,16 @@ int main() {
     int numar;
     cout << "Introdu un numar: ";
     cin >> numar;
-
     if(numar % 2 == 0) {
         cout << "Numarul este par." << endl;
     } else {
         cout << "Numarul este impar." << endl;
     }
-
     return 0;
 }
- 
+
+ ![image](https://github.com/mierlush/Adaugator_Programare/assets/163460760/98772f9a-7839-45d1-95ee-f3eccca5a61d)
+
 
 Calcularea Puterii:
 •	Solicită utilizatorului să introducă o bază și un exponent și calculează rezultatul ridicării la putere.
@@ -118,22 +109,19 @@ using namespace std;
 
 int main() {
     int baza, exponent, rezultat = 1;
-
     cout << "Introdu o baza: ";
     cin >> baza;
-
     cout << "Introdu un exponent: ";
     cin >> exponent;
-
     for (int i = 0; i < exponent; i++) {
         rezultat *= baza;
     }
-
     cout << "Rezultatul ridicarii la putere este: " << rezultat << endl;
-
     return 0;
 }
- 
+
+ ![image](https://github.com/mierlush/Adaugator_Programare/assets/163460760/8cd9e0f1-57ef-4952-958f-dbc17e694c9b)
+
 Gestionarea Intrărilor Utilizatorului:
 Rezolvare =NULL
 
@@ -147,26 +135,19 @@ using namespace std;
 
 int main() {
     int numar1, numar2, numar3;
-
     cout << "Introdu primul numar: ";
     cin >> numar1;
-
     cout << "Introdu al doilea numar: ";
     cin >> numar2;
-
     cout << "Introdu al treilea numar: ";
     cin >> numar3;
-
     int celMaiMare = numar1;
-
     if (numar2 > celMaiMare)
         celMaiMare = numar2;
-
     if (numar3 > celMaiMare)
         celMaiMare = numar3;
-
     cout << "Cel mai mare numar este: " << celMaiMare << endl;
-
     return 0;
 }
  
+![image](https://github.com/mierlush/Adaugator_Programare/assets/163460760/45a1afed-69ab-45d5-8251-f0c5bb0b80bf)
